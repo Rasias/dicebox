@@ -29,6 +29,7 @@ void InitiativeTracker::printChars() {
 }
 
 bool InitiativeTracker::rollInitiative() {
+  _initiativeList.clear();
   srand(time(NULL));
   int tmp;
   std::tuple<int, InitiativeChar*> tmpTuple;
